@@ -12,8 +12,20 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      spacing:{
+        '5X' : '5px',
+        '15X' : '15px',
+        '25X' : '25px',
+        '10%' : '10%',
+        '30%' : '30%'
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui')
+  ],
+  daisyui: {
+    themes: ["light", "dark", "cupcake"],
+  },
 };
 export default config;
